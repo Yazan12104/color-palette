@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="FileSaver.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #Style {
+        text-align: center;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      input {
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Style">
+      <input id="input1" type="text" value="#" />
+      <button id="button1">submit</button>
+      <button onclick="exportColorsToJSON()">Export Colors to JSON</button>
+    </div>
+
+    <div class="container">
+      <div class="row" id="row"></div>
+      <div class="box">
+        </div>
+    </div>
+    <button onclick="palettes()">Make a palette</button>
+    
+      
+    <script src="index.js"></script>
+  </body>
+</html>
